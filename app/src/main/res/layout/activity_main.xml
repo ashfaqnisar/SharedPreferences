@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:id="@+id/layout">
+
+    <Switch
+        android:id="@+id/turn_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Turn Green"
+        android:layout_marginBottom="50dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:textColorHint="#000000"
+        android:id="@+id/edit_name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your section"
+        android:textColorHint="#000000"
+        android:id="@+id/edit_section"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="save "
+            android:id="@+id/save_button"
+            android:onClick="save_the_data"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Load"
+            android:id="@+id/load_button"
+            android:onClick="load_the_data"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Second Activity"
+        android:onClick="open_second_activity"
+        android:id="@+id/open_second_activity"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Person Name"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/person_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Person Section"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:id="@+id/person_section"
+        />
+
+</LinearLayout>
